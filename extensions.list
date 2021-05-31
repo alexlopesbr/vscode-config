@@ -1,0 +1,97 @@
+code --list-extensions | xargs -L 1 echo code --install-extensi
+
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension dsznajder.es7-react-js-snippets
+code --install-extension eamodio.gitlens
+code --install-extension esbenp.prettier-vscode
+code --install-extension formulahendry.auto-rename-tag
+code --install-extension formulahendry.code-runner
+code --install-extension glenn2223.live-sass
+code --install-extension icrawl.discord-vscode
+code --install-extension jpoissonnier.vscode-styled-components
+code --install-extension maurodesouza.vscode-simple-readme
+code --install-extension naumovs.color-highlight
+code --install-extension octref.vetur
+code --install-extension origamid.origamid-next
+code --install-extension PKief.material-icon-theme
+code --install-extension ritwickdey.LiveServer
+code --install-extension TabNine.tabnine-vscode
+
+{
+  "cSpell.language": "en,pt",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 16,
+  "editor.lineHeight": 26,
+  "editor.tabSize": 2,
+  "editor.tabCompletion": "on",
+  "editor.wordWrap": "on",  
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.autoClosingBrackets": "always",
+  "editor.colorDecorators": false,
+  "editor.autoClosingQuotes": "always",
+  "workbench.activityBar.visible": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "explorer.confirmDragAndDrop": false,
+  "diffEditor.renderSideBySide": true,
+  "html.autoClosingTags": false,
+  "prettier.singleQuote": true,
+
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    // "**/node_modules": true
+  },
+  "files.associations": {
+    "*.js": "javascriptreact",   
+    ".sequelizerc": "javascript",
+    ".prettierrc": "json",
+    "*.tsx": "typescriptreact",
+    ".stylelintrc": "json",
+  },
+
+  "editor.minimap.renderCharacters": false,
+  "breadcrumbs.enabled": false,
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  
+  "editor.renderWhitespace": "selection",
+  "prettier.trailingComma": "all",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.sortOrder": "default",
+  "window.title": "${activeEditorMedium}${separator}${rootName}",
+  "window.newWindowDimensions": "inherit",
+  "window.menuBarVisibility": "toggle",
+  "workbench.colorTheme": "Origamid Next",
+  
+  "html.format.wrapAttributes": "auto",
+  "html.format.wrapLineLength": 0,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.folders.color": "#ffffff",
+  "tabnine.experimentalAutoImports": true,
+  "editor.minimap.enabled": false,
+
+  
+
+  "zenMode.hideTabs": false,
+  "zenMode.hideLineNumbers": false,
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.zoomLevel": -1
+}
